@@ -10,6 +10,9 @@
 [![License](https://img.shields.io/github/license/chaiNNer-org/spandrel)](https://github.com/chaiNNer-org/spandrel/blob/main/LICENSE)
 [![Contributors](https://img.shields.io/github/contributors/chaiNNer-org/spandrel)](https://github.com/chaiNNer-org/spandrel/graphs/contributors)
 
+## **This fork is mainly for personal changes**
+
+
 Spandrel is a library for loading and running pre-trained PyTorch models. It automatically detects the model architecture and hyperparameters from model files, and provides a unified interface for running models.
 
 After seeing many projects extract out [chaiNNer](https://github.com/chaiNNer-org/chaiNNer)'s model support into their own projects, I decided to create this PyPi package for the architecture support and model loading functionality. I'm also hoping that by having a central package anyone can use, the community will be encouraged [to help add support for more models](CONTRIBUTING.md).
