@@ -5,10 +5,10 @@ backend-path = ["."]
 
 [project]
 name = "spandrel"
-version = "0.4.1"
+version = "0.4.2"
 description = "Spandrel is a library for loading and running pre-trained PyTorch models. It automatically detects the model architecture and hyperparameters from model files, and provides a unified interface for running models."
 authors = [
-    {name = "ChaiNNer", email = "chaiNNer@chaiNNer.org"},
+    {name = "ChaiNNer-darkfalls"},
 ]
 
 [tool.setuptools]
