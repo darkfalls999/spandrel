@@ -1,0 +1,77 @@
+# USRNet()
+p
+  m_head
+    p.m_head.weight: Tensor float32 Size([64, 4, 3, 3])
+  m_down1
+    0.res
+      p.m_down1.0.res.0.weight: Tensor float32 Size([64, 64, 3, 3])
+      p.m_down1.0.res.2.weight: Tensor float32 Size([64, 64, 3, 3])
+    1.res
+      p.m_down1.1.res.0.weight: Tensor float32 Size([64, 64, 3, 3])
+      p.m_down1.1.res.2.weight: Tensor float32 Size([64, 64, 3, 3])
+    2
+      p.m_down1.2.weight: Tensor float32 Size([128, 64, 2, 2])
+  m_down2
+    0.res
+      p.m_down2.0.res.0.weight: Tensor float32 Size([128, 128, 3, 3])
+      p.m_down2.0.res.2.weight: Tensor float32 Size([128, 128, 3, 3])
+    1.res
+      p.m_down2.1.res.0.weight: Tensor float32 Size([128, 128, 3, 3])
+      p.m_down2.1.res.2.weight: Tensor float32 Size([128, 128, 3, 3])
+    2
+      p.m_down2.2.weight: Tensor float32 Size([256, 128, 2, 2])
+  m_down3
+    0.res
+      p.m_down3.0.res.0.weight: Tensor float32 Size([256, 256, 3, 3])
+      p.m_down3.0.res.2.weight: Tensor float32 Size([256, 256, 3, 3])
+    1.res
+      p.m_down3.1.res.0.weight: Tensor float32 Size([256, 256, 3, 3])
+      p.m_down3.1.res.2.weight: Tensor float32 Size([256, 256, 3, 3])
+    2
+      p.m_down3.2.weight: Tensor float32 Size([512, 256, 2, 2])
+  m_body
+    0.res
+      p.m_body.0.res.0.weight: Tensor float32 Size([512, 512, 3, 3])
+      p.m_body.0.res.2.weight: Tensor float32 Size([512, 512, 3, 3])
+    1.res
+      p.m_body.1.res.0.weight: Tensor float32 Size([512, 512, 3, 3])
+      p.m_body.1.res.2.weight: Tensor float32 Size([512, 512, 3, 3])
+  m_up3
+    0
+      p.m_up3.0.weight: Tensor float32 Size([512, 256, 2, 2])
+    1.res
+      p.m_up3.1.res.0.weight: Tensor float32 Size([256, 256, 3, 3])
+      p.m_up3.1.res.2.weight: Tensor float32 Size([256, 256, 3, 3])
+    2.res
+      p.m_up3.2.res.0.weight: Tensor float32 Size([256, 256, 3, 3])
+      p.m_up3.2.res.2.weight: Tensor float32 Size([256, 256, 3, 3])
+  m_up2
+    0
+      p.m_up2.0.weight: Tensor float32 Size([256, 128, 2, 2])
+    1.res
+      p.m_up2.1.res.0.weight: Tensor float32 Size([128, 128, 3, 3])
+      p.m_up2.1.res.2.weight: Tensor float32 Size([128, 128, 3, 3])
+    2.res
+      p.m_up2.2.res.0.weight: Tensor float32 Size([128, 128, 3, 3])
+      p.m_up2.2.res.2.weight: Tensor float32 Size([128, 128, 3, 3])
+  m_up1
+    0
+      p.m_up1.0.weight: Tensor float32 Size([128, 64, 2, 2])
+    1.res
+      p.m_up1.1.res.0.weight: Tensor float32 Size([64, 64, 3, 3])
+      p.m_up1.1.res.2.weight: Tensor float32 Size([64, 64, 3, 3])
+    2.res
+      p.m_up1.2.res.0.weight: Tensor float32 Size([64, 64, 3, 3])
+      p.m_up1.2.res.2.weight: Tensor float32 Size([64, 64, 3, 3])
+  m_tail
+    p.m_tail.weight: Tensor float32 Size([3, 64, 3, 3])
+h.mlp
+  0
+    h.mlp.0.weight: Tensor float32 Size([64, 2, 1, 1])
+    h.mlp.0.bias:   Tensor float32 Size([64])
+  2
+    h.mlp.2.weight: Tensor float32 Size([64, 64, 1, 1])
+    h.mlp.2.bias:   Tensor float32 Size([64])
+  4
+    h.mlp.4.weight: Tensor float32 Size([16, 64, 1, 1])
+    h.mlp.4.bias:   Tensor float32 Size([16])

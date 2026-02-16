@@ -2,8 +2,9 @@
 Spandrel is a library for loading and running pre-trained PyTorch models. It automatically detects the model architecture and hyper parameters from model files, and provides a unified interface for running models.
 """
 
-__version__ = "0.4.1"
+__version__ = "0.4.0"
 
+from .__helpers.analyze import analyze_state_dict
 from .__helpers.canonicalize import canonicalize_state_dict
 from .__helpers.loader import ModelLoader
 from .__helpers.main_registry import MAIN_REGISTRY
@@ -28,6 +29,7 @@ from .__helpers.registry import (
 )
 
 __all__ = [
+    "analyze_state_dict",
     "ArchId",
     "Architecture",
     "ArchRegistry",

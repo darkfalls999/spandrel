@@ -12,7 +12,9 @@ from ..architectures import (
     GFPGAN,
     GRL,
     HAT,
+    HMA,
     IPT,
+    MFDIN,
     PLKSR,
     RCAN,
     RGT,
@@ -41,6 +43,7 @@ from ..architectures import (
     Swin2SR,
     SwinIR,
     Uformer,
+    USRNet,
 )
 from .registry import ArchRegistry, ArchSupport
 
@@ -54,6 +57,7 @@ Modifying this registry will affect all `ModelLoader` instances without a custom
 MAIN_REGISTRY.add(
     ArchSupport.from_architecture(Compact.CompactArch()),
     ArchSupport.from_architecture(SwiftSRGAN.SwiftSRGANArch()),
+    ArchSupport.from_architecture(HMA.HMANetArch()),
     ArchSupport.from_architecture(HAT.HATArch()),
     ArchSupport.from_architecture(GRL.GRLArch()),
     ArchSupport.from_architecture(Swin2SR.Swin2SRArch()),
@@ -90,6 +94,8 @@ MAIN_REGISTRY.add(
     ArchSupport.from_architecture(HVICIDNet.HVICIDNetArch()),
     ArchSupport.from_architecture(SeemoRe.SeemoReArch()),
     ArchSupport.from_architecture(MoSR.MoSRArch()),
+    ArchSupport.from_architecture(USRNet.USRNetArch()),
+    ArchSupport.from_architecture(MFDIN.MFDINArch()),
     ArchSupport.from_architecture(MoESR.MoESRArch()),
     ArchSupport.from_architecture(RCAN.RCANArch()),
 )
